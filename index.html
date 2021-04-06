@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <title>Clothes Shopp</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="logo">
+                <img src="img/csLogo.jpg" alt="logo do site clothes shoop">
+            </div>
+            <div id="buscar">
+                <form action="" method="POST">
+                    <input type="text" placeholder="Pesquisar"  pattern="[A-Za-z]{3}">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+           <!-- Cadastro usuário --> 
+           <div id="conta">
+               <button onclick="document.getElementById('btn01').style.display='block'">
+                    <i class="fas fa-user"></i>
+                    Minha Conta
+               </button>
+               <button id="compra">
+                    <i class="fas fa-shopping-cart"></i>
+                    Meu Carrinho
+               </button>
+            </div> 
+            <div  id="btn01" class="mostrar">
+                <form class="mostrar-conteudo animate" action="" method="POST">
+                    <div class="close">
+                        <span onclick="document.getElementById('btn01').style.display='none'" class="fechar">&times;</span>
+                    </div>
+                    <div class="cadastro">
+                        <h2>Já sou cliente</h2>
+                        <label for="Email">Email</label>
+                        <input type="email" placeholder="Email" name="Email" required>
+
+                        <label for="psw">Senha</label>
+                        <input type="password" placeholder="Senha" name="psw" required>
+                        <a href="#cadastro" class="psw">Esqueci minha senha</a>
+                        <button type="submit">Acessar conta</button>
+                        <h2>Criar conta</h2>
+                        <label for="Email">Email</label>
+                        <input type="email" placeholder="Email" name="Email" required>
+                        <button type="submit">Prosseguir</button>
+                    </div>
+                </form> 
+            </div>
+                <!-- Navegação -->
+                <div id="topnav">
+                <nav>
+                    <a href="#home" class="navItem">Inicio</a>
+                    <a href="#home" class="navItem">Masculino</a>
+                    <a href="#home" class="navItem">Feminino</a>
+                    <a href="#home" class="navItem">Lançamentos</a>
+                    <a href="#home" class="navItem">Ofertas</a>
+                    <a href="#home" class="navItem">Perfumes</a>
+                </nav>
+
+                <!-- Slides navegação -->
+                <section>
+                    <img class="slideNav" src="img/slidetop1.jpg" alt="foto de perfume">
+                    <img class="slideNav" src="img/slidetop2.jpg" alt="imagem de tenis">
+                    <img class="slideNav" src="img/slidetop3.jpg" alt="imagem de várias camisetas">
+                    <img class="slideNav" src="img/slidetop4.jpg" alt="tenis da nike cinza">
+                    <img class="slideNav" src="img/slidetop5.jpg" alt="perfume importado">
+                </section>
+            </div>
+        </header>
+    </div>
+
+    <script>
+        //Obter o cadastro //
+        var mostrar = document.getElementById('btn01');
+
+        //Quando clicar em qualquer lugar fechar form//
+        window.onclick = function(event) {
+            if (event.target == mostrar) {
+                mostrar.style.display = "none";
+            }
+        }
+    </script>
+
+    <script>
+        //Slides automáticos - mudar img a cada 3 segundos
+        var slides = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slideNav");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slides++;
+            if(slides > x.length) {slides = 1}
+            x[slides-1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+</body>
+</html>

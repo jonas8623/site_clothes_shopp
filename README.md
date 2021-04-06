@@ -1,4 +1,4 @@
-<img src="img/csLogo.jpg" widht="35%" height="35%">
+<img src="img/csLogo.jpg" widht="325px" height="250px">
 
 # Clothes Shopp
 

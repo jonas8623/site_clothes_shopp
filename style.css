@@ -206,14 +206,131 @@ a.psw{
 }
 .navItem:hover{
     opacity: .8;
+    color: #000;
 }
 .slideNav{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 75%;
 }
 .slideNav img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
 }
+.frete{
+    width: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Cinzel",serif;
+    font-size: 1.6rem;
+    letter-spacing: .3rem;
+    font-weight: 900;
+    cursor: text;
+    color: rgba(0,0,0,0.83);
+    margin-bottom: 1rem;
+}
+.banner{
+    width: 100%;
+    position: relative;
+}
+.tituloH3{
+    font-family: "Cinzel",serif;
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    margin: 0 0 .4rem 4rem;
+    color: midnightblue;
+}
+.banner1,.banner2 {
+    width: 90%;
+    height: auto;
+    margin: 0 0 1.2rem 4rem;
+}
+.banner1 img,.banner2 img{
+    width: 100%;
+    object-fit: scale-down;
+}
+.banner1 button{
+    position: absolute;
+    right: 44%;
+    top: 37%;
+    width: 8rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    text-transform: capitalize;
+    font-family: "ZCOOL QingKe HuangYou";
+    border-radius: .8rem;
+    border-width: thin;
+    cursor: pointer;
+    padding: 1rem;
+}
+.banner2 button{
+    position: absolute;
+    right: 44%;
+    top:86%;
+    width: 8rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: "ZCOOL QingKe HuangYou";
+    border-radius: .8rem;
+    border-width: thin;
+    cursor: pointer;
+    padding: 1rem;
+}
+.banner button:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(6px);
+}
+.conteudoHorizontal{
+    display: table;
+    width: 90%;
+    height: auto;
+
+}
+.row{
+    display: flex;
+    flex-flow: row wrap;
+}
+.column{
+    width: 28%;
+    margin: .3rem 0 1.2rem 4rem;
+    padding: 1rem;
+    text-align: center;
+}
+.column img{
+    width: 70%;
+    object-fit: scale-down;
+    cursor: pointer;
+}
+.column hr{
+    margin-top: 3rem;
+}
+.column p{
+    font-size: 1.58rem;
+    font-style: italic;
+    padding: .3rem;
+    letter-spacing: 2px;
+}
+.column .preco{
+    font-weight: bold;
+}
+.checked{
+    color: orange;
+}
+.column .envio{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: green;
+    padding: .3rem;
+    letter-spacing: 2px;
+}
+.column:hover{
+    border: 2px outset #666;
+    cursor: pointer;
+}
+

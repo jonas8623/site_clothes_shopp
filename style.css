@@ -11,6 +11,9 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+  }
 header{
     width: 100%;
     height: 100vh;
@@ -83,9 +86,11 @@ header{
     letter-spacing: .2rem;
     font-weight: 800;
     border-radius: .3rem;
+    transition: 0.4s;
 }
 #conta button:hover{
-    opacity: .8;
+   background-color: #f5fffa;
+    color: #000;
 }
 .mostrar{
     display: none;
@@ -203,10 +208,15 @@ a.psw{
     letter-spacing: .15rem;
     margin-left: 2.6rem;
     line-height: 4rem;
+    transition: 0.3s;
 }
 .navItem:hover{
     opacity: .8;
     color: #000;
+    background-color: #a9a9a9;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    border-radius: 3px;
 }
 .slideNav{
     position: absolute;
@@ -276,7 +286,7 @@ a.psw{
     letter-spacing: .2rem;
     text-align: center;
     text-transform: capitalize;
-    font-family: "ZCOOL QingKe HuangYou";
+    font-family: "ZCOOL QingKe HuangYou", serif;
     border-radius: .8rem;
     border-width: thin;
     cursor: pointer;
@@ -301,6 +311,7 @@ a.psw{
     margin: .3rem 0 1.2rem 4rem;
     padding: 1rem;
     text-align: center;
+    transition: 0.2s;
 }
 .column img{
     width: 70%;
@@ -333,4 +344,94 @@ a.psw{
     border: 2px outset #666;
     cursor: pointer;
 }
-
+footer{
+    width: 100%;
+    height: auto;
+}
+.footer-content{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #f5f5f5;
+}
+.column-footer{
+    width: 20%;
+    margin: .3rem 0 1.2rem 4rem;
+    padding: 1rem;
+}
+.column-footer h4{
+    font-family: "ZCOOL QingKe HuangYou", serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: .6rem;
+    letter-spacing: 2px;
+}
+.column-footer a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.13rem;
+    line-height: 2.2rem;
+    letter-spacing: 1px;
+    color: #666;
+    transition: 0.3s;
+}
+.column-footer a:hover{
+    color: #3B5998;
+    text-decoration: underline;
+}
+.duvida{
+    font-family: fantasy;
+    font-size: 1.24rem;
+    letter-spacing: 2px;
+    color: royalblue;
+    cursor: pointer;
+    padding: .55rem;
+}
+.duvida:hover{
+    border:2px solid royalblue;
+    border-radius: 5rem;
+}
+.column-footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+.fab{
+    font-size: 2rem;
+    color: #696969;
+    cursor: pointer;
+}
+.fa-facebook-square:hover{
+    color: #3B5998;
+}
+.fa-instagram-square:hover{
+    color: #125688;
+}
+.fa-twitter-square:hover{
+    color: #55ACEE;
+}
+.fa-youtube-square:hover{
+    color: #bb0000;
+}
+.direito{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.direito p{
+    font-size: .95rem;
+    font-family: "Kiwi Maru",serif;
+    letter-spacing: 2px;
+}
+#link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: #696969;
+    border-radius: .5rem;
+    color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.1rem 0.6rem #00000009 ;
+}

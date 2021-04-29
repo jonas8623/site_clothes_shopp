@@ -11,7 +11,7 @@
 
 <img alt="Github License" src="https://img.shields.io/github/license/jonas8623/site_clothes_shopp" />
 
-###  Em construção...  🚧
+###  Finalizado...  ✔️
 ### Campo de acesso do usuário
 + email
 + senha
@@ -19,9 +19,9 @@
 ### Tarefas
 
 - [x] Criar header com cadastro para cliente 
-- [x] Criar main com imagens de produtos da loja e descrição deles
+- [x] Criar main com imagens dos produtos da loja e descrição 
 - [x] Criar footer com dados informativos do site 
-- [ ] Responsividade
+- [x] Responsividade
 
 ### 🛠 Tecnologias usadas
 

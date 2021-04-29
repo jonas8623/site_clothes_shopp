@@ -65,12 +65,12 @@ header{
     cursor: pointer;
 }
 #conta{
-   width: 30%;
+   width: 35%;
    position: relative;
    bottom: 40%;
    left: 65%;
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    align-items: center;
 }
 #conta button{
@@ -215,7 +215,6 @@ a.psw{
     color: #000;
     background-color: #a9a9a9;
     border-bottom: 2px solid #000;
-    border-top: 2px solid #000;
     border-radius: 3px;
 }
 .slideNav{
@@ -296,9 +295,9 @@ a.psw{
     box-shadow: 0 5px #666;
     transform: translateY(6px);
 }
-.conteudoHorizontal{
+.conteudoP{
     display: table;
-    width: 90%;
+    width: 100%;
     height: auto;
 
 }
@@ -434,4 +433,305 @@ footer{
     justify-content: center;
     align-items: center;
     box-shadow: 0 0.1rem 0.6rem #00000009 ;
+}
+/* RESPONSIVIDADE 1200PX*/
+@media screen and (max-width: 1200px){
+    #logo img{
+        width: 55%;
+        height: 75%;
+    }
+    #buscar form{
+        top: 6.8rem;
+    }
+    #conta button{
+        padding: .5rem;
+    }
+    .mostrar{
+        padding-top: 1rem;
+    }
+    .mostrar-conteudo{
+        margin:2% auto 4% auto;
+    }
+    .cadastro{
+        padding: 2rem;
+    }
+    .cadastro h2{
+        font-size: 1.35rem;
+    }
+    .cadastro label{
+        font-size: .85rem;
+    }
+    .cadastro input[type=email], .cadastro input[type=password]{
+        padding: .5rem 1rem;
+    }
+    .cadastro button[type=submit] {
+        padding: .5rem 1.4rem;
+        font-size: .75rem;
+    }
+    .navItem{
+         font-size: 1rem;       
+     }
+    .column{
+        width: 27%;
+    }
+    .column-footer{
+        width: 19%;
+    }
+    .duvida{
+        font-size: 1rem;
+    }
+    .direito p{
+        font-size: .83rem;
+    }
+    #link-topo{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+}
+
+/* RESPONSIVIDADE 960PX*/
+@media screen and (max-width:960px) {
+    #buscar form{
+        position: absolute;
+        left: 19rem;
+    }
+    #buscar input[type=text] {
+        padding: .6rem .6rem .6rem .8rem;
+        font-size: .85rem;
+    }
+    #buscar .fas{
+        font-size: .85rem;
+    }
+    #conta button{
+        font-size: .76rem;
+        letter-spacing: .1rem;
+    }
+    .mostrar{
+        height: auto;
+    }
+    a.psw{
+        font-size: 1rem;
+    }
+    .navItem{
+       margin-left: 1rem;
+    }
+    .slideNav{
+        height: 76%;
+    }
+    .frete{
+        font-size: 1.4rem;
+    }
+    .tituloH3{
+        font-size: 1.3rem;
+    }
+    .banner1 button,.banner2 button{
+        width: 6rem;
+        height: 2.5rem;
+        font-size: 1.1rem;
+        padding: .4rem ;
+    }
+    .banner2 button{
+        position: absolute;
+        top: 84%;
+    }
+    .column{
+        width: 24%;
+    }
+    .column p{
+        font-size: 1.3rem;
+    }
+    .column .envio{
+        font-size: 1rem;
+    }
+    .column-footer{
+        width: 20%;
+        margin: .3rem 0 1.2rem 2rem;
+    }
+    .column-footer h4{
+        font-size: 1.2rem;
+        margin-bottom: .3rem;
+    }
+    .column-footer a{
+        font-size: .96rem;
+    }
+    .duvida{
+        letter-spacing: 1px;
+        padding: .5rem;
+    }
+    .direito p{
+        font-size: .7rem;
+    }
+}
+/* RESPONSIVIDADE 768PX*/
+@media screen and (max-width:768px) {
+    #conta{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    #conta button{
+        font-size: .6rem;
+        font-weight: 800;
+        margin-right: .8rem;
+        padding: .25rem;
+    }
+    .cadastro{
+        padding: 1.7rem;
+    }
+    .cadastro h2{
+        font-size: 1rem;
+    }
+    .cadastro label{
+        font-size: .76rem;
+    }
+    .cadastro input[type=email], .cadastro input[type=password]{
+        padding: .3rem .8rem;
+    }
+    .cadastro button[type=submit] {
+        padding: .5rem 1.4rem;
+        font-size: .68rem;
+    }
+    .navItem{
+        margin-left: .95rem;
+        padding: .7rem .2rem;
+     }
+     .frete{
+        font-size: 1.2rem;
+    }
+    .tituloH3{
+        font-size: 1.1rem;
+    }
+    .banner1 button{
+        top: 6.6rem;
+    }
+    .banner1 button,.banner2 button{
+        width: 4rem;
+        height: 2rem;
+        font-size: .8rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .column p{
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    .column .envio{
+        font-size: .85rem;
+        font-weight: bold;
+    }
+    .column-footer{
+        width: 20%;
+        margin: .3rem 0 1rem 1.5rem;
+    }
+    .column-footer h4{
+        font-size: 1.1rem;
+    }
+    .column-footer a{
+        font-size: .9rem;
+    }
+    .duvida{
+        padding: .2rem;
+    }
+    .column-footer ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .fab{
+        font-size: 1.7rem;
+    }
+}
+/* RESPONSIVIDADE 480PX*/
+@media screen and (max-width:480px) {
+    #logo{
+        width: 40%;
+    }
+    #logo img{
+        width: 100%;
+        height: 90%;
+    }
+    #buscar form{
+        left: 12rem;
+        top: 12rem;
+        margin-bottom: .7rem;
+    }
+    #buscar input[type=text]{
+    width: 55%;
+    }
+    #conta{
+        display: block;
+    }
+    #conta button{
+        margin-bottom: .6rem;
+        padding: .4rem;;
+    }
+    .mostrar{
+        width: auto;
+    }
+    .navItem{
+        display: block;
+        padding: 0 0 0 .3rem;
+        margin: .4rem;
+        text-shadow: 12px 6px 8px #000;
+    }
+    .navItem:hover{
+        border: none;
+    }
+    .slideNav{
+        height: 40%;
+    }
+    .frete{
+        margin-top: 12rem;
+        font-size: .95rem;
+    }
+    .tituloH3{
+        text-align: center;
+        margin-bottom: .9rem;
+    }
+    .banner{
+     position: relative;
+     right: 2rem;
+    }
+    .banner1,.banner2{
+        box-shadow: 1px 1px 12px  #000;
+    }
+    .banner button{
+        display: none;
+    }
+    .row{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .column{
+        width: 50%;
+        background-color: #f5f5f5;
+        border: 1px solid #3B5998;
+        border-radius: 8px;
+        box-shadow: 3px 3px 12px #707070;
+    }
+    .footer-content{
+        display: flex ;
+        flex-direction: column;
+    }
+    .column-footer{
+        width: 32%;
+    }
+}
+/* RESPONSIVIDADE 320PX*/
+@media screen and (max-width:320px) {
+    #logo{
+        width:44%;
+        height: 41%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    #buscar{
+       display: none;
+    }
+    .banner{
+        right: 3rem;
+    }
 }

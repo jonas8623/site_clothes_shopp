@@ -11,7 +11,7 @@
 
 <img alt="Github License" src="https://img.shields.io/github/license/jonas8623/site_clothes_shopp" />
 
-###  Finalizado...  ✔️
+###  Finalizado  ✔️
 ### Campo de acesso do usuário
 + email
 + senha
